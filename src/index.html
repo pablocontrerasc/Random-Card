@@ -13,17 +13,30 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container">
+      <div class="cards borde">
+        <div id="simbolo1" class="text-start"></div>
+        <div id="numero" class="text-center"></div>
+        <div id="simbolo2">
+        
+        </div>
       </div>
     </div>
+  </div>
+   
+    <div class="row justify-content-md-center botonActualizar">
+        <div class="col-md-auto top-3 start-100">
+          <button type="button" class="btn btn-primary" class="text-center" onclick="actualizar()">
+          Actualizar Página</button>
+      </div>
+    </div>
+
+   
+    <script>
+      function actualizar() {
+        console.log("click");
+        location.reload();
+      }
+    </script>
   </body>
 </html>
